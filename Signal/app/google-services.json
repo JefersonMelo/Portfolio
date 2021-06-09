@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "942936048845",
+    "firebase_url": "https://signal-db-57e05-default-rtdb.firebaseio.com",
+    "project_id": "signal-db-57e05",
+    "storage_bucket": "signal-db-57e05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942936048845:android:6ec768d19c444c85225584",
+        "android_client_info": {
+          "package_name": "com.jefmelo.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942936048845-1o7k9n9274mrmh709ruv0h6hde12plr5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jefmelo.myapplication",
+            "certificate_hash": "58ff1c105fd63998999722fcbe24749975c5f819"
+          }
+        },
+        {
+          "client_id": "942936048845-e574g4esqia9g5c83rg1tdnf9qdsuk8e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ0EIlsXZ-zzqd3OqPaEdIA6qw6qsqPzI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942936048845-e574g4esqia9g5c83rg1tdnf9qdsuk8e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
