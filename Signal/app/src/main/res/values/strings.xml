@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Signal</string>
+    <string name="btn_Cadastrar">Cadastrar</string>
+    <string name="txt_validador">Validar</string>
 </resources>
