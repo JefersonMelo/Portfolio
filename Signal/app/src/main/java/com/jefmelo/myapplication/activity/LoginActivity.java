@@ -13,7 +13,7 @@ import com.jefmelo.myapplication.helper.Preferencias;
 import java.util.HashMap;
 import java.util.Random;
 
-import Utils.MaskFormatUtil;
+import com.jefmelo.myapplication.utils.MaskFormatUtil;
 
 public class LoginActivity extends AppCompatActivity {
 
