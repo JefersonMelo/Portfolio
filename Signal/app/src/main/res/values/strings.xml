@@ -2,4 +2,7 @@
     <string name="app_name">Signal</string>
     <string name="btn_Cadastrar">Cadastrar</string>
     <string name="txt_validador">Validar</string>
+    <string name="cod_area">(11)</string>
+    <string name="cod_pais">+55</string>
+    <string name="telefone">99999-9999</string>
 </resources>
