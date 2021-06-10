@@ -34,7 +34,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView_logo" />
 
     <EditText
-        android:id="@+id/editTextPersonName"
+        android:id="@+id/editText_nome"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -56,7 +56,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_nome_app" />
 
     <EditText
-        android:id="@+id/editTextNumber_phone"
+        android:id="@+id/editTex_telefone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -65,39 +65,37 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:ems="10"
-        android:hint="777777777"
+        android:hint="88888-8888"
         android:inputType="number"
-        android:maxLength="9"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
         android:textColorHint="@color/white"
         android:textColorLink="@color/black"
         android:textCursorDrawable="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber_DDD"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPersonName" />
+        app:layout_constraintStart_toEndOf="@+id/editText_DDD"
+        app:layout_constraintTop_toBottomOf="@+id/editText_nome" />
 
     <EditText
-        android:id="@+id/editTextNumber_Cod_Pais"
+        android:id="@+id/editText_Cod_Pais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:width="60dp"
+        android:width="50dp"
         android:ems="10"
-        android:hint="+55"
+        android:hint="55"
         android:inputType="number"
-        android:maxLength="2"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
         android:textColorHint="@color/white"
         android:textColorLink="@color/black"
         android:textCursorDrawable="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextNumber_phone"
+        app:layout_constraintBottom_toBottomOf="@+id/editTex_telefone"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber_DDD"
+        android:id="@+id/editText_DDD"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -105,17 +103,16 @@
         android:ems="10"
         android:hint="11"
         android:inputType="number"
-        android:maxLength="2"
         android:textColor="@color/white"
         android:textColorHighlight="@color/white"
         android:textColorHint="@color/white"
         android:textColorLink="@color/black"
         android:textCursorDrawable="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextNumber_phone"
-        app:layout_constraintStart_toEndOf="@+id/editTextNumber_Cod_Pais" />
+        app:layout_constraintBottom_toBottomOf="@+id/editTex_telefone"
+        app:layout_constraintStart_toEndOf="@+id/editText_Cod_Pais" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_cadastrar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -135,7 +132,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber_phone"
+        app:layout_constraintTop_toBottomOf="@+id/editTex_telefone"
         tools:text="@string/btn_Cadastrar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
