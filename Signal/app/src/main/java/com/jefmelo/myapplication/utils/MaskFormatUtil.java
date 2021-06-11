@@ -6,12 +6,12 @@ import android.widget.EditText;
 
 public abstract class MaskFormatUtil {
 
-    public static final String FORMAT_CPF = "###.###.###-##";
-    public static final String FORMAT_FONE = "####-#####";
-    public static final String FORMAT_FONE_COD_AREA = "(##)####-#####";
-    public static final String FORMAT_CEP = "#####-###";
-    public static final String FORMAT_DATE = "##/##/####";
-    public static final String FORMAT_HOUR = "##:##";
+    //public static final String FORMAT_CPF = "###.###.###-##";
+    //public static final String FORMAT_CEP = "#####-###";
+    //public static final String FORMAT_DATE = "##/##/####";
+    //public static final String FORMAT_HOUR = "##:##";
+    //public static final String FORMAT_FONE_COD_AREA = "(##)####-#####";
+    public static final String FORMAT_FONE = "#####-####";
     public static final String FORMAT_COD_PAIS = "+##";
     public static final String FORMAT_COD_AREA = "(##)";
 
@@ -19,9 +19,9 @@ public abstract class MaskFormatUtil {
      * https://receitasdecodigo.com.br/android/como-inserir-mascara-em-um-edittext-no-android
      * Método que deve ser chamado para realizar a formatação
      *
-     * @param ediTxt
-     * @param mask
-     * @return
+     * param ediTxt
+     * param mask
+     * return
      */
     public static TextWatcher mask(final EditText ediTxt, final String mask) {
         return new TextWatcher() {
@@ -68,7 +68,7 @@ public abstract class MaskFormatUtil {
                 replaceAll("[-]", "").
                 replaceAll("[/]", "").
                 replaceAll("[(]", "").
-                replaceAll("[ ]","").
+                replaceAll("[ ]", "").
                 replaceAll("[:]", "").
                 replaceAll("[)]", "").
                 replaceAll("[+]", "");
