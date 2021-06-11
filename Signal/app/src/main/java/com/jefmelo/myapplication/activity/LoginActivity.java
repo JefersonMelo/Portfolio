@@ -1,6 +1,5 @@
 package com.jefmelo.myapplication.activity;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -63,11 +62,7 @@ public class LoginActivity extends AppCompatActivity {
             String telFormatado = MaskFormatUtil.unmask(telSemFormatar);
 
             //Gerar Token, Verificar Geração de Token no Firebase
-            /*https://firebase.google.com/docs/auth/admin/create-custom-tokens?hl=pt-br#android
-             * https://firebase.google.com/docs/database/rest/auth?hl=pt-br#java
-             * https://firebase.google.com/docs/auth/android/phone-auth?hl=pt-br
-             * https://www.youtube.com/watch?v=QVecPoSG_ec
-             * */
+
             Random random = new Random();
             int numRandom = random.nextInt(9999 - 1000) + 1000;
             String token = String.valueOf(numRandom);
@@ -78,7 +73,6 @@ public class LoginActivity extends AppCompatActivity {
             preferencias.salvarPreferenciasUsuario(nomeUsuario, telSemFormatar, token);
 
             //Envio SMS
-            //https://developer.android.com/reference/android/telephony/SmsManager?hl=pt-br
             envioSms("+" + telFormatado, msgEnvio);
 
             HashMap<String, String> usuario = preferencias.getDadosUsuario();
@@ -128,3 +122,10 @@ public class LoginActivity extends AppCompatActivity {
         alertDialog.show();
     }
 }
+
+/*https://firebase.google.com/docs/auth/admin/create-custom-tokens?hl=pt-br#android
+ * https://firebase.google.com/docs/database/rest/auth?hl=pt-br#java
+ * https://firebase.google.com/docs/auth/android/phone-auth?hl=pt-br
+ * https://www.youtube.com/watch?v=QVecPoSG_ec
+ * https://developer.android.com/reference/android/telephony/SmsManager?hl=pt-br
+ * */
