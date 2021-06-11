@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.telephony.SmsManager;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.jefmelo.myapplication.R;
 import com.jefmelo.myapplication.helper.Permissoes;
@@ -62,7 +64,6 @@ public class LoginActivity extends AppCompatActivity {
             String telFormatado = MaskFormatUtil.unmask(telSemFormatar);
 
             //Gerar Token, Verificar Geração de Token no Firebase
-
             Random random = new Random();
             int numRandom = random.nextInt(9999 - 1000) + 1000;
             String token = String.valueOf(numRandom);
@@ -73,11 +74,22 @@ public class LoginActivity extends AppCompatActivity {
             preferencias.salvarPreferenciasUsuario(nomeUsuario, telSemFormatar, token);
 
             //Envio SMS
-            envioSms("+" + telFormatado, msgEnvio);
+            boolean envioOk = envioSms("+" + telFormatado, msgEnvio);
 
+            //Redirecionar Para Confirmação do Token
+            if (envioOk) {
+                Intent intent = new Intent(LoginActivity.this, ValidadorActivity.class);
+                startActivity(intent);
+                finish();
+
+            } else {
+                Toast.makeText(LoginActivity.this, "Problema Com o Envio do SMS. Tente Novamente", Toast.LENGTH_LONG).show();
+            }
+
+            /*
             HashMap<String, String> usuario = preferencias.getDadosUsuario();
-
             Log.i("TOKEN", "T " + usuario.get("token"));
+            */
 
 
         });
