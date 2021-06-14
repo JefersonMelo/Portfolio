@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mensageiro</string>
+    <string name="btn_cadastrar">Cadastrar</string>
+    <string name="txt_validador">Validar</string>
+    <string name="cod_area">(11)</string>
+    <string name="cod_pais">+55</string>
+    <string name="telefone">99999-9999</string>
+    <string name="reenviar_codigo">Não Recebeu o Código? <b>Clique Aqui!</b></string>
+</resources>

@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Signal</string>
-    <string name="btn_Cadastrar">Cadastrar</string>
-    <string name="txt_validador">Validar</string>
-    <string name="cod_area">(11)</string>
-    <string name="cod_pais">+55</string>
-    <string name="telefone">99999-9999</string>
-    <string name="reenvioCodigo">Não Recebeu o Código? <b>Clique Aqui!</b></string>
-</resources>
