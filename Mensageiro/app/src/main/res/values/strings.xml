@@ -6,4 +6,10 @@
     <string name="cod_pais">+55</string>
     <string name="telefone">99999-9999</string>
     <string name="reenviar_codigo">Não Recebeu o Código? <b>Clique Aqui!</b></string>
+    <string name="botao_sair">Sair</string>
+    <string name="image_app">Image App</string>
+    <string name="digite_o_codigo">Digite o Código</string>
+    <string name="validacao">Validação</string>
+    <string name="digite_o_codigo_do_sms_recebido">Digite o Código do SMS Recebido.</string>
+    <string name="hint_digite_nome">Digite Seu Nome</string>
 </resources>
